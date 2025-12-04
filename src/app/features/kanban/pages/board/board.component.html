@@ -1,0 +1,45 @@
+<div class="add-task-container">
+  <button mat-raised-button color="accent" (click)="openAddTaskDialog()">
+    Add Task
+  </button>
+</div>
+
+<div class="board">
+  <div class="column" *ngFor="let stage of stages">
+    <h2>{{ stage.name }}</h2>
+
+    <div
+  cdkDropList
+  [id]="'list-' + stage.id"
+  [cdkDropListConnectedTo]="connectedLists"
+  [cdkDropListData]="stageWiseTasks[stage.id!]"
+  class="task-list"
+  (cdkDropListDropped)="drop($event, stage.id!)"
+>
+
+
+
+      <div 
+        class="task-card" 
+        *ngFor="let task of stageWiseTasks[stage.id!] trackBy: trackByTask" 
+        cdkDrag
+      >
+      
+        <div class="task-content" (click)="openEditTaskDialog(task)">
+          <mat-card>{{ task.title }}</mat-card>
+        </div>
+
+        <button 
+          mat-icon-button 
+          color="warn" 
+          class="delete-btn" 
+          (click)="deleteTask(task.id, $event)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,27 +1,43 @@
-# AdvancedKanbanBoard
+# 🗂️ Advanced Kanban Board – Angular Assessment Project (3–5 Years)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+A fully functional Kanban Board application built using Angular, Angular Material, and JSON Server.  
+This project demonstrates real-world architecture, drag & drop features, modular structure, and clean UI.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# 🚀 Features Implemented
 
-## Code scaffolding
+## 🔐 Authentication
+- Login using JSON server users
+- AuthGuard route protection
+- LocalStorage-based session
+- Logout functionality
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📊 Dashboard
+- Displays total tasks
+- Shows tasks grouped by stage (To Do, In Progress, Review, Done)
 
-## Build
+## 🗂️ Kanban Board
+- Dynamic stages fetched from API
+- Drag & drop tasks using Angular CDK
+- Add New Task (Dialog)
+- Edit Task (Dialog)
+- Delete Task
+- Auto-refresh board after actions
+- Smooth material UI
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📑 Tasks Table
+- Material table (Angular Material)
+- Pagination
+- View all tasks in tabular format
+- Delete tasks
 
-## Running unit tests
+## ⚙ Settings
+- Light / Dark theme switcher
+- Theme saved in LocalStorage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+# 🗄️ JSON Server Setup
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Install JSON Server:

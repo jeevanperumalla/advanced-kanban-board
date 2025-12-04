@@ -1,0 +1,26 @@
+.dashboard {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  width: 200px;
+  padding: 25px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.total {
+  background: #1976d2;
+}
+
+.completed {
+  background: #2e7d32;
+}
+
+.pending {
+  background: #d32f2f;
+}

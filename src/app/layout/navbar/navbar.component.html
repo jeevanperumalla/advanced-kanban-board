@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" class="navbar">
+
+  <span class="brand">Kanban Board</span>
+
+  <span class="spacer"></span>
+
+  <button mat-button routerLink="/dashboard" routerLinkActive="active">Dashboard</button>
+  <button mat-button routerLink="/kanban" routerLinkActive="active">Kanban</button>
+  <button mat-button routerLink="/tasks" routerLinkActive="active">Tasks</button>
+  <button mat-button routerLink="/settings" routerLinkActive="active">Settings</button>
+
+  <span class="spacer"></span>
+
+  <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+</mat-toolbar>

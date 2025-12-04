@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "stages": [
+    {
+      "id": "1",
+      "name": "To Do",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "name": "In Progress",
+      "order": 2
+    },
+    {
+      "id": "3",
+      "name": "Review",
+      "order": 3
+    },
+    {
+      "id": "4",
+      "name": "Done",
+      "order": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id": "9fec",
+      "title": "Test Task 2",
+      "description": "Testing add task feature 2",
+      "stageId": "2"
+    },
+    {
+      "id": "4ac1",
+      "title": "Test Task 3 ",
+      "description": "Testing task added feature 3",
+      "stageId": 3
+    },
+    {
+      "id": "07a5",
+      "title": "Test Task 4",
+      "description": "Testing task added feature 4",
+      "stageId": 4
+    },
+    {
+      "id": "d1d9",
+      "title": "Test Task 1",
+      "description": "Test task added feature 1",
+      "stageId": 1
+    },
+    {
+      "id": "797a",
+      "title": "Test Task 5",
+      "description": "Testing Task added feature 5",
+      "stageId": 2
+    }
+  ]
+}

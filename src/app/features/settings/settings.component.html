@@ -1,0 +1,18 @@
+<h2>User Settings</h2>
+
+<mat-card class="settings-card">
+
+  <mat-form-field appearance="fill">
+    <mat-label>Select Theme</mat-label>
+    <mat-select [(value)]="selectedTheme" (selectionChange)="changeTheme()">
+      <mat-option value="light">Light</mat-option>
+      <mat-option value="dark">Dark</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+  <mat-slide-toggle [(ngModel)]="rememberMe" (change)="saveSettings()">
+    Remember Me
+  </mat-slide-toggle>
+
+</mat-card>

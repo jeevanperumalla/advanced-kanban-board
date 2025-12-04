@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>Add New Task</h2>
+
+<div mat-dialog-content>
+  <form [formGroup]="taskForm">
+
+    <mat-form-field appearance="fill" class="full">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full">
+      <mat-label>Stage</mat-label>
+      <select matInput formControlName="stageId">
+        <option *ngFor="let s of data.stages" [value]="s.id">{{ s.name }}</option>
+      </select>
+    </mat-form-field>
+
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="saveTask()" [disabled]="taskForm.invalid">
+    Save
+  </button>
+</div>

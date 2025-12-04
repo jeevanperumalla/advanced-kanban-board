@@ -1,1 +1,152 @@
-/* You can add global styles to this file, and also import other style files */
+/* GLOBAL BASE STYLES */
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* THEME VARIABLES */
+:root {
+  --light-bg: #f5f5f5;
+  --dark-bg: #121212;
+}
+
+/* APPLY THEME INSIDE ALL ANGULAR COMPONENTS */
+:host-context(.dark) * {
+  color: #ffffff !important;
+}
+:host-context(.light) * {
+  color: #000000 !important;
+}
+
+/* ------------------------------------------- */
+/* LIGHT MODE (Default)                        */
+/* ------------------------------------------- */
+body.light {
+  background: var(--light-bg) !important;
+  color: #000 !important;
+}
+
+/* Material Cards */
+body.light mat-card,
+body.light .mat-mdc-card {
+  background: #ffffff !important;
+  color: #000 !important;
+}
+
+/* Kanban Columns */
+body.light .column {
+  background: #efefef !important;
+  color: #000 !important;
+}
+
+/* Task Cards */
+body.light .task-card mat-card {
+  background: #ffffff !important;
+  color: #000 !important;
+}
+
+/* Table Light Mode */
+body.light .mat-mdc-table,
+body.light table {
+  background: #ffffff !important;
+  color: #000 !important;
+}
+
+body.light th,
+body.light td {
+  color: #000 !important;
+}
+
+/* ------------------------------------------- */
+/* DARK MODE                                   */
+/* ------------------------------------------- */
+body.dark {
+  background: var(--dark-bg) !important;
+  color: #ffffff !important;
+}
+
+/* Material Cards */
+body.dark mat-card,
+body.dark .mat-mdc-card {
+  background: #1f1f1f !important;
+  color: #ffffff !important;
+}
+
+/* Kanban Columns */
+body.dark .column {
+  background: #1e1e1e !important;
+  color: #ffffff !important;
+  border: 1px solid #333 !important;
+}
+
+/* Task Cards */
+body.dark .task-card mat-card {
+  background: #2c2c2c !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+
+/* Table Background */
+body.dark table,
+body.dark .mat-mdc-table {
+  background: #1f1f1f !important;
+  color: #ffffff !important;
+}
+
+body.dark th,
+body.dark td {
+  color: #ffffff !important;
+}
+
+/* Paginator */
+body.dark .mat-mdc-paginator {
+  background: #1f1f1f !important;
+  color: #ffffff !important;
+}
+
+/* Inputs, Selects, Text Areas */
+body.dark input,
+body.dark textarea,
+body.dark .mat-mdc-select-value-text,
+body.dark .mat-input-element {
+  color: #ffffff !important;
+}
+
+/* Dropdown Panel */
+body.dark .mat-mdc-select-panel {
+  background: #1f1f1f !important;
+  color: #ffffff !important;
+}
+
+/* Buttons */
+body.dark button,
+body.dark .mat-mdc-raised-button,
+body.dark .mat-mdc-button {
+  color: #ffffff !important;
+}
+
+/* Dialogs */
+body.dark .mat-mdc-dialog-container {
+  background: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+/* Scrollbars */
+body.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+body.dark ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+body.dark ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+body.dark ::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
